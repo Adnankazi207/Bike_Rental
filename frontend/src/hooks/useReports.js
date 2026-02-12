@@ -4,7 +4,7 @@ import { subDays } from 'date-fns';
 
 // Create an axios instance for cleaner calls
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
+  baseURL: import.meta.env.VITE_API_URL || 'https://bike-rental-pry6.onrender.com/api',
 });
 
 /**

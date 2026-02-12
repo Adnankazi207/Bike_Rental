@@ -2,7 +2,7 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/bikes";
+const API_URL = "https://bike-rental-pry6.onrender.com/api/bikes";
 
 /* ================= GET ALL BIKES ================= */
 export function useBikes() {
@@ -82,7 +82,7 @@ export function useBike(bikeId) {
   return useQuery({
     queryKey: ["bike", bikeId],
     queryFn: async () => {
-      const res = await axios.get(`http://localhost:5000/api/bikes/${bikeId}`);
+      const res = await axios.get(`https://bike-rental-pry6.onrender.com/api/bikes/${bikeId}`);
       return res.data;
     },
     enabled: !!bikeId,

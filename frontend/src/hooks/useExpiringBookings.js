@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 
-const api = axios.create({ baseURL: 'http://localhost:5000/api' });
+const api = axios.create({ baseURL: 'https://bike-rental-pry6.onrender.com/api' });
 
 export function useExpiringBookingNotifications() {
   return useQuery({

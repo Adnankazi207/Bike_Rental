@@ -2,7 +2,7 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
 import { toast } from "sonner";
 
-const API_URL = "http://localhost:5000/api/bookings";
+const API_URL = "https://bike-rental-pry6.onrender.com/api/bookings";
 
 /* =========================
    GET ALL BOOKINGS

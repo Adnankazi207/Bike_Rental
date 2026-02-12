@@ -1171,7 +1171,7 @@ export default function BookBike() {
 
       // 2. Create the Order on your Backend
       const res = await fetch(
-        "http://localhost:5000/api/payment/create-order",
+        "https://bike-rental-pry6.onrender.com/api/payment/create-order",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -1225,7 +1225,7 @@ const checkStatusAndConfirm = async (orderId, customerId) => {
     }).toString();
 
     const verifyRes = await fetch(
-      `http://localhost:5000/api/payment/verify/${orderId}?${queryParams}`,
+      `https://bike-rental-pry6.onrender.com/api/payment/verify/${orderId}?${queryParams}`,
     );
     const verifyData = await verifyRes.json();
 
