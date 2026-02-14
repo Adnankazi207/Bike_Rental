@@ -98,7 +98,7 @@ const RentalForm = () => {
 
     try {
       const response = await axios.post(
-        "https://pipip-backend.onrender.com/api/rentals",
+        "https://bike-rental-pry6.onrender.com/api/rentals",
         {
           name: formData.fullName,
           phone: formData.mobile,
