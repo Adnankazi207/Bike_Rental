@@ -23,7 +23,7 @@ app.use(
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://bike-rental-pry6.onrender.com"],
+    origin: ["http://localhost:5173", "https://bike-rental-frontend-02uq.onrender.com"],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS","PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"],
